@@ -23,7 +23,5 @@
 - 🔤 [Webfont self-hosting](https://github.com/feat-agency/vite-plugin-webfont-dl) - doenload you webfonts while building and make your site faster.
 - 🦾 TypeScript, why not???
 - ⚙️ Unit Testing with [Vitest](https://github.com/vitest-dev/vitest)
-- E2E Testing with [Cypress](https://cypress.io/) 
+- E2E Testing with [Cypress](https://cypress.io/)
 - [GitHub Actions](https://github.com/features/actions)
-
-

@@ -8,6 +8,6 @@ export default defineConfig({
     vue(),
 
     // config at uno.config.ts
-    UnoCSS()
+    UnoCSS(),
   ],
 })
