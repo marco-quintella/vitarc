@@ -15,7 +15,7 @@
 - 🗂 [File based routing](./src/pages) - Each file inside `src/pages` is a route.
 - 🍍 [State Management via Pinia](https://pinia.vuejs.org/) - Simple, progressive and addictive state management for vue.
 - 📑 [Layout system](./src/layouts) - Easily create and use layouts.
-- 🎨 [UnoCSS](https://github.com/antfu/unocss) -  still best in class tool to replace tailwind.
+- 🎨 [UnoCSS](https://github.com/antfu/unocss) - still best in class tool to replace tailwind.
 - 😃 [Iconify icons classes](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 - 🌍 [I18n](./locales)
 - 📥 [Auto Importing](https://github.com/antfu/unplugin-auto-import) - auto import your libraries without worrying with tree shaking.
