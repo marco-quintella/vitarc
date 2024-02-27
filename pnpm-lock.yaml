@@ -13,6 +13,12 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.6.4
     version: 2.6.4(@unocss/eslint-plugin@0.58.5)(@vue/compiler-sfc@3.4.20)(eslint@8.57.0)(typescript@5.3.3)
+  '@iconify/json':
+    specifier: ^2.2.187
+    version: 2.2.187
+  '@julr/unocss-preset-forms':
+    specifier: ^0.1.0
+    version: 0.1.0(unocss@0.58.5)
   '@unocss/eslint-plugin':
     specifier: ^0.58.5
     version: 0.58.5(eslint@8.57.0)(typescript@5.3.3)
@@ -28,6 +34,9 @@ devDependencies:
   unocss:
     specifier: ^0.58.5
     version: 0.58.5(postcss@8.4.35)(vite@5.1.4)
+  unocss-preset-scrollbar:
+    specifier: ^0.3.1
+    version: 0.3.1(unocss@0.58.5)
   vite:
     specifier: ^5.1.4
     version: 5.1.4
@@ -743,6 +752,13 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
+  /@iconify/json@2.2.187:
+    resolution: {integrity: sha512-s2YGP9Nuz1x4xAQq78Y6TZFqGZ8wUO7YlOdbqjwoMgmwJPhEhUrxLs2S17im1rG5g9TzAQsYzt4vsSlgCmoKDA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
+    dev: true
+
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
@@ -788,6 +804,15 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: true
+
+  /@julr/unocss-preset-forms@0.1.0(unocss@0.58.5):
+    resolution: {integrity: sha512-aQexTEjJY2r8hI4tDfgMB8ztQOnzCcovdra4CbbJ9c0QkvWibFR0yvEdvtWYFfg4kPYKQ+LbeowARCi5biQn+g==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      unocss: '>= 0.31.13 < 1'
+    dependencies:
+      unocss: 0.58.5(postcss@8.4.35)(vite@5.1.4)
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1225,6 +1250,10 @@ packages:
       unconfig: 0.3.11
     dev: true
 
+  /@unocss/core@0.56.5:
+    resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
+    dev: true
+
   /@unocss/core@0.58.5:
     resolution: {integrity: sha512-qbPqL+46hf1/UelQOwUwpAuvm6buoss43DPYHOPdfNJ+NTWkSpATQMF0JKT04QE0QRQbHNSHdMe9ariG+IIlCw==}
     dev: true
@@ -1242,6 +1271,12 @@ packages:
       - eslint
       - supports-color
       - typescript
+    dev: true
+
+  /@unocss/extractor-arbitrary-variants@0.56.5:
+    resolution: {integrity: sha512-p2pyzz/ONvc5CGcaB9OZvWE8qkRSgyuhaQqFQLdBFeUhveHC0CGP0iSnXwBgAFHWM7DJo4/JpWeZ+mBt0ogVLA==}
+    dependencies:
+      '@unocss/core': 0.56.5
     dev: true
 
   /@unocss/extractor-arbitrary-variants@0.58.5:
@@ -1288,6 +1323,14 @@ packages:
       ofetch: 1.3.3
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@unocss/preset-mini@0.56.5:
+    resolution: {integrity: sha512-/KhlThhs1ilauM7MwRSpahLbIPZ5VGeGvaUsU8+ZlNT3sis4yoVYkPtR14tL2IT6jhOU05N/uu3aBj+1bP8GjQ==}
+    dependencies:
+      '@unocss/core': 0.56.5
+      '@unocss/extractor-arbitrary-variants': 0.56.5
+      '@unocss/rule-utils': 0.56.5
     dev: true
 
   /@unocss/preset-mini@0.58.5:
@@ -1337,6 +1380,13 @@ packages:
 
   /@unocss/reset@0.58.5:
     resolution: {integrity: sha512-2wMrkCj3SSb5hrx9TKs5jZa34QIRkHv9FotbJutAPo7o8hx+XXn56ogzdoUrcFPJZJUx2R2nyOVbSlGMIjtFtw==}
+    dev: true
+
+  /@unocss/rule-utils@0.56.5:
+    resolution: {integrity: sha512-CXIGHCIC9B8WUl9KbbFMSZHcsIgfmI/+X0bjBv6xrgBVC1EQ2Acq4PYnJIbaRGBRAhl9wYjNL7Zq2UWOdowHAw==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@unocss/core': 0.56.5
     dev: true
 
   /@unocss/rule-utils@0.58.5:
@@ -3628,6 +3678,15 @@ packages:
     resolution: {integrity: sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==}
     dependencies:
       '@types/unist': 2.0.10
+    dev: true
+
+  /unocss-preset-scrollbar@0.3.1(unocss@0.58.5):
+    resolution: {integrity: sha512-LhvcQA1cfwq06sqAZY++1crrLsOf/IfOPdyCkMHVyywI9WCvMhxCJlCcrySlQI8/Y2VUjOpLBDWB0w3DXS5qRA==}
+    peerDependencies:
+      unocss: '>= 0.31.13 < 1'
+    dependencies:
+      '@unocss/preset-mini': 0.56.5
+      unocss: 0.58.5(postcss@8.4.35)(vite@5.1.4)
     dev: true
 
   /unocss@0.58.5(postcss@8.4.35)(vite@5.1.4):
